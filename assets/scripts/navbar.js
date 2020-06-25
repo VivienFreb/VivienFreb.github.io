@@ -1,4 +1,5 @@
 window.onload=function(){
+    // Ajout des transitions lors d'un clic sur les menu
     let listOfLinks = document.getElementsByClassName("navbar-link");
     for(let links of listOfLinks){
         links.addEventListener("click", function(e){
@@ -8,6 +9,7 @@ window.onload=function(){
         }, false)
     }
 
+    // Animation page d'accueil Three.js3D
     VANTA.FOG({
         el: "#top",
         mouseControls: true,
@@ -76,3 +78,12 @@ window.addEventListener("scroll", function(){
     }
     lastY = (currentY <= 0) ? 0 : currentY;
 }, false);
+
+
+
+// function scrollToElement(elementName){
+//     console.log(elementName);
+//     let element = document.getElementById(elementName);
+//     element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+//     return false
+// }
