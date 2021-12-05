@@ -9,6 +9,20 @@ window.onload=function(){
         }, false)
     }
 
+    // Ajout des transitions lors d'un clic sur les menu mobiles + fermeture du panel
+    let listOfMobileLinks = document.getElementsByClassName("mobile-navbar-link");
+    for(let links of listOfMobileLinks){
+        links.addEventListener("click", function(e){
+            let element = document.getElementById(links.dataset.id);
+            element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+            e.preventDefault();
+            //Hide Mobile Menu
+            let x = document.getElementById("mobile-navbar");
+            openMobileNavbar();
+        }, false)
+    }
+
+
     // Animation page d'accueil Three.js3D
     VANTA.FOG({
         el: "#top",
@@ -53,15 +67,12 @@ window.onload=function(){
 
 function openMobileNavbar(){
     let x = document.getElementById("mobile-navbar");
-    let y = document.getElementById("navbar");
     let z = document.getElementById ("SectionPage");
     if(x.className === "mobileVisible"){
         x.classList.remove("mobileVisible");
-        y.classList.remove("grayOut");
         z.classList.remove("grayOut");
     }else{
         x.classList.add("mobileVisible");
-        y.classList.add("grayOut");
         z.classList.add("grayOut");
     }
     return false
