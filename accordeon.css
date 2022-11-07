@@ -1,0 +1,156 @@
+/* ==== Accordeon Style ==== */
+
+
+
+  body{
+    margin: 0!important;
+  }
+
+  .accordeon-wrapper{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  .accordeon-view{
+    align-items: center; /* vertical */
+    justify-content: center; /* horizontal */
+    display: flex;
+    background: black;
+    overflow: hidden;
+    flex-grow: 1;
+    height: 500px;
+    position: relative;
+  }
+
+  .accordeon-bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-position: center!important;
+    background-size: cover!important;
+    background-repeat: none!important;
+  }
+
+  .accordeon-bg h2{
+    opacity: 1;
+    text-align: center;
+    font-weight: 100;
+    color: whitesmoke;
+    font-size: 40px;
+  }
+
+  .accordeon-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .accordeon-content p{
+    opacity: 0;    
+    font-size: 20px;
+    font-family: DIN-Next-W1G,arial,georgia,sans-serif;
+    font-weight: 100;
+    color: white;
+    transform: translateX(-500%);
+    margin: 50px;
+  }
+
+  .view-large .accordeon-content p{
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+
+  .view-1 .accordeon-bg{
+    background: url('assets/img/programmation.jpg');
+  }
+
+  .view-2 .accordeon-bg{
+    background: url('assets/img/musique.jpg');
+  }
+
+  .view-3 .accordeon-bg{
+    background: url('assets/img/jeux-video.jpeg');
+  }
+
+  .view-4 .accordeon-bg{
+    background: url('assets/img/cinema.jpg');
+  }
+
+
+
+  .view-small{
+    flex-grow: 1;
+  }
+
+  .view-small h2{
+    opacity: 0;
+    display: none;
+  }
+
+  .view-small .accordeon-bg{
+    opacity: 0.5;
+    filter: blur(2px);
+  }
+
+  .view-large{
+    flex-grow: 4;
+  }
+
+  .view-large .accordeon-bg{
+    opacity: 0.25;
+  }
+
+  .view-large .accordeon-bg h2{
+    opacity: 0;
+  }
+
+
+  /* Animations  */
+  .accordeon-bg{
+    transition: opacity .5s ease-in, filter .25s ease-in;
+  }
+
+  .accordeon-view{
+    transition: flex-grow .25s ease-in;
+  }
+
+  .accordeon-content p{
+    transition: opacity .25s ease;
+    transition-delay: .35s;
+  }
+
+  .accordeon-bg h2{
+    transition: opacity .5s ease;
+  }
+
+
+  /* = End Animations = */
+
+  @media (max-width: 1250px) {
+    .accordeon-wrapper{
+      flex-direction: column;
+    }
+
+    .accordeon-view{
+      height: 350px;
+    }
+
+    .view-small h2{
+      opacity: 0.75;
+      display: block;
+    }
+
+    .view-small .accordeon-bg{
+      filter: blur(0px);
+    }
+
+  }
+
+/* ==== End Accordeon ==== */

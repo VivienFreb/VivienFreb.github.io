@@ -1,340 +1,375 @@
 <!doctype html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.min.css">
-    <link rel="stylesheet" href="responsive.min.css">
-    <link rel="stylesheet" href="swiper.min.css">
-    <title>Vivien Frébourg</title>
-</head>
-<body>
-<header>
-    <div id="navbar">
-        <div class="navbar-container logo"><a href="#">Vivien Frébourg</a></div>
-        <div class="navbar-container">
-            <a href="#details" data-id="details" class="navbar-link">Qui suis-je ?</a>
-        </div>
-        <div class="navbar-container">
-            <a href="#parcours" data-id="parcours" class="navbar-link">Mon Parcours</a>
-        </div>
-        <div class="navbar-container">
-            <a href="#projets" data-id="projets" class="navbar-link">Mes Projets</a>
-        </div>
-        <div class="navbar-container">
-            <a href="#contact" data-id="contact" class="navbar-link">Me Contacter</a>
-        </div>
-        <div class="menuIcon">
-            <a href="" onclick="return openMobileNavbar()">
-                <i class="fas fa-bars fa-lg"></i>
-            </a>
-        </div>
-    </div>
-
-    <div id="mobile-navbar">
-        <div class="mobile-navbar-container logo">
-            <a href="#">
-                Vivien Frébourg
-            </a>
-            <a href="" class="closeMobNavbar" onclick="return openMobileNavbar()" >
-                <i class="fas fa-times fa-lg"></i>
-            </a>
-        </div>
-        <div class="mobile-navbar-container">
-            <a href="#details" data-id="details" class="mobile-navbar-link">
-                Qui suis-je ?
-            </a>
-        </div>
-        <div class="mobile-navbar-container">
-            <a href="#parcours" data-id="parcours" class="mobile-navbar-link">
-                Mon Parcours
-            </a>
-        </div>
-        <div class="mobile-navbar-container">
-            <a href="#projets" data-id="projets" class="mobile-navbar-link">
-                Mes Projets
-            </a>
-        </div>
-        <div class="mobile-navbar-container">
-            <a href="#contact" data-id="contact" class="mobile-navbar-link">
-                Me contacter
-            </a>
-        </div>
-        <div class="mobile-navbar-container mobile-social-media">
-            <a href="https://www.instagram.com" target="_blank">
-                <i class="fab fa-instagram fa-lg"></i>
-            </a>
-            <a href="https://www.facebook.com" target="_blank">
-                <i class="fab fa-facebook fa-lg"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/vivien-frebourg/" target="_blank">
-                <i class="fab fa-linkedin fa-lg"></i>
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <i class="fab fa-twitter-square fa-lg"></i>
-            </a>
-
-        </div>
-    </div>
-
-    <div id="sidebar-social-media" class="">
-        <div class="sidebar-container">
-            <a href="https://www.instagram.com" target="_blank" class="instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com" target="_blank" class="facebook">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/vivien-frebourg/" target="_blank" class="linkedin">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://twitter.com" target="_blank" class="twitter">
-                <i class="fab fa-twitter-square"></i>
-            </a>
-        </div>
-        <div class="sidebar-container sidebar-control">
-            <a href="#" class="sidebar-control-arrow">
-                <i class="fas fa-chevron-right"></i>
-            </a>
-        </div>
-    </div>
-
-
-</header>
-
-
-<div id="HomePage">
-    <div id="SectionPage">
-        <section class="section home" id="top">
-            <div class="centered">
-                <p>Bienvenue sur mon site </p>
-                <p class="sh1">Vivien Frébourg</p>
-                <p class="sh2">Développeur</p>
-                <a href="#" class="btn-visite">
-                    Commencer la visite
-                </a>
-            </div>
-        </section>
-        <section class="section details" id="details">
-            <div class="section-flex">
-                <div class="gauche" style="flex: 50%">
-                    <p class="section-titre">Qui suis-je ?</p>
-                    <div class="section-content">
-                        <p class="section-sous-titre">Un passioné avant tout</p>
-                        <p class="section-texte">
-                            Passionné par le développement web et logiciel ainsi que les nouvelles technologies, je suis actuellement à la recherche d'un poste de développeur PHP en région Normande, de préférence aux alentours de Rouen ou Le Havre. </br>
-                            J'aime apprendre de nouvelles méthodes de travail ainsi que de nouveaux langages de programmation, c'est pourquoi j'aimerais m'améliorer davantage dans la partie Front-End pour pouvoir être reconnu en tant que développeur FullStack.
-                        </p>
-                        <div>
-                            <div class="interets">
-                                <p>🖥</p>
-                                <p>Code</p>
-                            </div>
-                            <div class="interets">
-                                <p>🎮</p>
-                                <p>Jeux</p>
-                            </div>
-                            <div class="interets">
-                                <p>🎵</p>
-                                <p>Musique</p>
-                            </div>
-                            <div class="interets">
-                                <p>🎬</p>
-                                <p>Animation</p>
-                            </div>
-                        </div>
-                    </div>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="accordeon.css">
+        <link rel="stylesheet" href="style.min.css">
+        <link rel="stylesheet" href="responsive.min.css">
+        <link rel="stylesheet" href="swiper.min.css">
+        <title>Vivien Frébourg</title>
+    </head>
+    <body>
+        <header>
+            <div id="navbar">
+                <div class="navbar-container logo"><a href="#">Vivien Frébourg</a></div>
+                <div class="navbar-container">
+                    <a href="#details" data-id="details" class="navbar-link">Qui suis-je ?</a>
                 </div>
-                <div class="droite" style="flex: 50%">
+                <div class="navbar-container">
+                    <a href="#parcours" data-id="parcours" class="navbar-link">Mon Parcours</a>
                 </div>
-
-            </div>
-            <img src="assets/img/hobbies.png" class="akali" alt="Images de mes lobbies">
-        </section>
-
-        <section class="section info" id="parcours">
-            <p class="section-titre" style="text-align: right;">Mon parcours</p>
-            <div>
-                <div class="flex-parent">
-                    <div class="input-flex-container">
-                        <div class="input">
-                            <span data-year="2016" data-info="Baccalauréat Technologique"></span>
-                        </div>
-                        <div class="input">
-                            <span data-year="2017" data-info="Entrée BTS Informatique"></span>
-                        </div>
-                        <div class="input">
-                            <span data-year="05/2018" data-info="Stage 1ère année"></span>
-                        </div>
-                        <div class="input">
-                            <span data-year="01/2019" data-info="Stage 2ème année"></span>
-                        </div>
-                        <div class="input">
-                            <span data-year="2019" data-info="BTS Informatique"></span>
-                        </div>
-                        <div class="input">
-                            <span data-year="2020" data-info="Bachelor WIS"></span>
-                        </div>
-                        <div class="input">
-                            <span data-year="2021" data-info="Double Diplôme Bachelor"></span>
-                        </div>
-                        <div class="input active">
-                            <span data-year="Aujourd'hui" data-info="Recherche Poste Développeur"></span>
-                        </div>
-                        <div class="input">
-                            <span data-year="Objectif" data-info="Développeur Fullstack"></span>
-                        </div>
-                    </div>
-                    <div class="description-flex-container">
-                        <p>Obtention du Baccalauréat Technologique STI2D option SIN (Sytèmes d'information et nymérique) au Lycée Raymond Queneau à Yvetot.</p>
-                        <p>Entrée au BTS Informatique SIO (Services informatiques aux organisations) avec option SLAM (Solutions logicielles et applications métiers) à StJoSup au Havre.</p>
-                        <p>
-                            Stage d'une durée de 5 semaines dans le cadre du BTS chez Microweb au Havre en tant que Développeur Web.
-                            <br>
-                            Maintenance et ajout de pages responsives sur des sites web.
-                            <br>
-                            Utilisation de PHP, HTML et CSS
-                        </p>
-                        <p>
-                            Stage d'une durée de 7 semaines, dans le cadre de ma deuxième année de BTS, à Antiote situé sur Yvetot en tant que Développeur D'application.
-                            <br>
-                            Développement d'une application de web-crawling en Windows Form C# sous Visual Studio.
-                            <br>
-                            Application permettant, à partir d'un lien ou d'une recherche via motclé, de récupérer les adresses mails présentes sur la page.
-                        </p>
-                        <p>Obtention de mon Brevet de Technicien Supérieur SIO (SLAM).</p>
-                        <p>Entrée au Bachelor WIS "Chef de projet digital" à Grenoble avec pour option "Développeur Web & Web Mobile" ainsi que "Concepteur Développeur d’Applications".</p>
-                        <p>Obtention du titre RNCP de niveau 5 "Développeur Web et Web Mobile". <br> Obtention du titre RNCP de niveau 6 "Concepteur Développeur d’Applications".</p>
-                        <p class="active">Je suis actuellement à la recherche d'un poste de développeur PHP en région Normande, de préférence aux alentours de Rouen ou Le Havre. Vous avez une piste ou une proposition ? N'hésitez pas à <a style="font-weight:bold;font-style:none; color: #2C3E50" href="#contact">me contacter</a>.</p>
-                        <p>L'objectif de mon parcours est de monter en compétences sur diverses technologies dites "back-end" mais également de m'améliorer grandement du côté de celles "front-end" pour pouvoir devenir un développeur full-stack.</p>
-                    </div>
+                <div class="navbar-container">
+                    <a href="#projets" data-id="projets" class="navbar-link">Mes Projets</a>
+                </div>
+                <div class="navbar-container">
+                    <a href="#contact" data-id="contact" class="navbar-link">Me Contacter</a>
+                </div>
+                <div class="menuIcon">
+                    <a href="" onclick="return openMobileNavbar()">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </a>
                 </div>
             </div>
-        </section>
 
-        <section class="section projets" id="projets">
-            <div>
-                <p class="section-titre">Mes projets</p>
+            <div id="mobile-navbar">
+                <div class="mobile-navbar-container logo">
+                    <a href="#">
+                        Vivien Frébourg
+                    </a>
+                    <a href="" class="closeMobNavbar" onclick="return openMobileNavbar()" >
+                        <i class="fas fa-times fa-lg"></i>
+                    </a>
+                </div>
+                <div class="mobile-navbar-container">
+                    <a href="#details" data-id="details" class="mobile-navbar-link">
+                        Qui suis-je ?
+                    </a>
+                </div>
+                <div class="mobile-navbar-container">
+                    <a href="#parcours" data-id="parcours" class="mobile-navbar-link">
+                        Mon Parcours
+                    </a>
+                </div>
+                <div class="mobile-navbar-container">
+                    <a href="#projets" data-id="projets" class="mobile-navbar-link">
+                        Mes Projets
+                    </a>
+                </div>
+                <div class="mobile-navbar-container">
+                    <a href="#contact" data-id="contact" class="mobile-navbar-link">
+                        Me contacter
+                    </a>
+                </div>
+                <div class="mobile-navbar-container mobile-social-media">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fab fa-facebook fa-lg"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vivien-frebourg/" target="_blank">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="fab fa-twitter-square fa-lg"></i>
+                    </a>
 
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-					
-                        <div class="swiper-slide" style="width: 1522px; margin-right: 30px;">
-                            <div class="container">
-                                <div class="">
-                                    <img class="slider-img" src="projets/new-portfolio/Home.PNG" alt="Visuel du nouveau site portfolio" style="width:100%">
-                                </div>
-                                <div class="slider-title" style="    position: absolute;    bottom: 0;    width: 100%;    background-color: #0f1923;    color: #ece8e1;    padding: 15px;">
-                                    <p style="    font-size: 30px;">
-                                        Nouveau Portfolio
-                                    </p>
-                                    <p class="">Projet en cours</p>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+            </div>
 
-                        <div class="swiper-slide" style="width: 1522px; margin-right: 30px;">
-                            <div class="container">
-                                <div class="">
-                                    <img class="slider-img" src="projets/bennezai/bennezai-accueil.png" alt="Présentation du site BenneZai" style="width:100%">
-                                </div>
-                                <div class="slider-title" style="    position: absolute;    bottom: 0;    width: 100%;    background-color: #0f1923;    color: #ece8e1;    padding: 15px;">
-                                    <p style="    font-size: 30px;">
-                                        BenneZai
-                                    </p>
-                                    <a target="_blank" href="https://github.com/VivienFreb/BenneZai" class="">Voir ce projet →</a>
-                                </div>
-                            </div>
-                        </div>
-						
-                        <div class="swiper-slide" style="width: 1522px; margin-right: 30px;">
-                            <div class="container">
-                                <div class="">
-                                    <img class="slider-img" src="projets/cinema-willies/cinemas-willies-thumbnail.jpg" alt="Image présentation Cinémas Willies" style="width:100%">
-                                </div>
-                                <div class="slider-title" style="    position: absolute;    bottom: 0;    width: 100%;    background-color: #0f1923;    color: #ece8e1;    padding: 15px;">
-                                    <p style="    font-size: 30px;">
-                                        Cinemas Willies
-                                    </p>
-                                    <a target="_blank" href="https://github.com/VivienFreb/Cinema-Willies" class="">Voir ce projet →</a>
-                                </div>
-                            </div>
-                        </div>
+            <div id="sidebar-social-media" class="">
+                <div class="sidebar-container">
+                    <a href="https://www.instagram.com" target="_blank" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vivien-frebourg/" target="_blank" class="linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="twitter">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </div>
+                <div class="sidebar-container sidebar-control">
+                    <a href="#" class="sidebar-control-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
 
-                        <div class="swiper-slide" style="width: 1522px; margin-right: 30px;">
-                            <div class="container">
-                                <div class="">
-                                    <img class="slider-img" src="projets/react-memorycard/react-memorycard-thumbnail.png" alt="Image présentation jeu de mémoire" style="width:100%">
-                                </div>
-                                <div class="slider-title" style="    position: absolute;    bottom: 0;    width: 100%;    background-color: #0f1923;    color: #ece8e1;    padding: 15px;">
-                                    <p style="    font-size: 30px;">
-                                        Jeu de mémoire (React)
-                                    </p>
-                                    <a target="_blank" href="https://github.com/VivienFreb/memory-reactjs" class="">Voir ce projet →</a>
-                                </div>
-                            </div>
-                        </div>
-						
-                        <div class="swiper-slide" style="width: 1522px; margin-right: 30px;">
-                            <div class="container">
-                                <div class="">
-                                    <img class="slider-img" src="projets/mylolgg/mylolgg-thumbnail.png" alt="Présentation du site MyLOL.GG" style="width:100%">
-                                </div>
-                                <div class="slider-title" style="    position: absolute;    bottom: 0;    width: 100%;    background-color: #0f1923;    color: #ece8e1;    padding: 15px;">
-                                    <p style="    font-size: 30px;">
-                                        Mastery Viewer MyLOL.GG (React)
-                                    </p>
-                                    <a target="_blank" href="https://github.com/VivienFreb/MyLOL.GG-Website" class="">Voir ce projet →</a>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="swiper-slide" style="width: 1522px; margin-right: 30px;">
-                            <div class="container">
-                                <div class="">
-                                    <img class="slider-img" src="projets/agence-immo/agence-thumbnails.jpg" alt="Image présentation site Agence Immobilière" style="width:100%">
-                                </div>
-                                <div class="slider-title" style="    position: absolute;    bottom: 0;    width: 100%;    background-color: #0f1923;    color: #ece8e1;    padding: 15px;">
-                                    <p style="    font-size: 30px;">
-                                        Agence Immo
-                                    </p>
-                                    <a target="_blank" href="https://github.com/VivienFreb/AgenceImmobiliere" class="">Voir ce projet →</a>
-                                </div>
+        </header>
+
+
+        <div id="HomePage">
+            <div id="SectionPage">
+                <section class="section home" id="top">
+                    <div class="centered">
+                        <p>Bienvenue sur mon site </p>
+                        <p class="sh1">Vivien Frébourg</p>
+                        <p class="sh2">Développeur</p>
+                        <a href="#" class="btn-visite">
+                            Commencer la visite
+                        </a>
+                    </div>
+                </section>
+
+
+                <section class="section details" id="details">
+                    <div class="section-flex">
+                        <div class="gauche">
+                            <p class="section-titre">Qui suis-je ?</p>
+                            <div class="section-content" style="margin-bottom: 50px;">
+                                <p class="section-sous-titre">Un passioné avant tout</p>
+                                <p class="section-texte">
+                                    Passionné par le développement web et logiciel ainsi que les nouvelles technologies, j’aime apprendre de nouveaux langages et outils au travers de projets concrets. 
+                                    <br>
+                                    <br>
+                                    Je suis actuellement à la recherche d'un poste de développeur PHP en région Normande, de préférence aux alentours de Rouen ou Le Havre. 
+                                    <br>
+                                    <br>
+                                    J'aime apprendre de nouvelles méthodes de travail ainsi que de nouveaux langages de programmation, c'est pourquoi j'aimerais m'améliorer davantage dans la partie Front-End pour pouvoir être reconnu en tant que développeur FullStack.
+                                </p>
+                                <div>
                             </div>
                         </div>
 
                     </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                </section>
+
+                <section class="section accordeon">
+                    <div class="container">
+                       <div class="row">
+                         <div class="accordeon-wrapper">
+
+                            <div class="accordeon-view view-1">
+                              <div class="accordeon-bg">
+                                <h2>Programmation</h2>         
+                            </div>
+                            <div class="accordeon-content">
+                                <p> <br>
+                                L'univers du développement m'a toujours captivé car j'aime développer des solutions pour simplifier, aider ou divertir les utilisateurs. <br>Dans mes projets non professionnels, j’ai pu développer des programmes ludiques (jeux de mémoire, applications liées aux jeux...) mais aussi des programmes simplifiant la mise en oeuvre de rendez-vous pour des évènements rassemblant plusieurs personnes.                               
+                                </p>
+                            </div>  
+                        </div>
+
+                        <div class="accordeon-view view-2">
+                          <div class="accordeon-bg">
+                            <h2>Musique</h2>
+                        </div>
+                        <div class="accordeon-content">
+                            <p>Fan des musiques d'orchestre ainsi que des musiques de films et épiques, je me retrouve souvent à travailler avec ceux-ci. <br> Le piano est l'instrument qui me fascine le plus!</p>
+                        </div>
+                    </div>
+
+                    <div class="accordeon-view view-3">
+                      <div class="accordeon-bg">
+                        <h2>Jeux-vidéos</h2>
+                    </div>
+                    <div class="accordeon-content">
+                        <p>Joueur de plusieurs jeux-vidéos, j'aime m'évader en jouant à plusieurs sur des titres connues, en faisant également des compétitions sur certains.<br>J'apprécie également me défouler sur des jeux en réalité virtuelle!</p>
+                    </div>
+                </div>
+
+                <div class="accordeon-view view-4">
+                  <div class="accordeon-bg">
+                    <h2>Cinéma</h2>
+                </div>
+                <div class="accordeon-content">
+                    <p>Grand consommateur de films en tout genre avec une attirance pour les films Marvel. <br>Je regarde également un bon nombre de séries étrangères, souvent asiatiques.</p>
                 </div>
             </div>
-            <!--            <a href="#" class="btn-visite">-->
-            <!--                Voir tous les projets-->
-            <!--            </a>-->
-        </section>
-
-        <section class="section contact" id="contact">
-            <p class="section-titre" style="font-size: 50px; text-align: center">Une question ? Une propositon ? Contactez-moi.</p>
-            <div class="section-flex" style="margin-top: 50px;">
-                <div class="gauche" style="flex: 50%">
-                    <p>Téléphone</p>
-                    <p>06.37.87.57.04</p>
-                    <a href="tel:+33637875704" class="btn-visite">Appeler</a>
-                </div>
-                <div class="droite" style="flex: 50%">
-                    <p>Email</p>
-                    <p>vivien.frebourg@outlook.com</p>
-                    <a href="mailto:vivien.frebourg@outlook.com" class="btn-visite">Envoyer un email</a>
-                </div>
-            </div>
-        </section>
-
+        </div>
     </div>
+</div>
+</section>
+
+<section class="section info" id="parcours">
+    <p class="section-titre" style="text-align: right;">Mon parcours</p>
+    <div>
+        <div class="flex-parent">
+            <div class="input-flex-container">
+                <div class="input">
+                    <span data-year="2016" data-info="Baccalauréat Technologique"></span>
+                </div>
+                <div class="input">
+                    <span data-year="2017" data-info="Entrée BTS Informatique"></span>
+                </div>
+                <div class="input">
+                    <span data-year="05/2018" data-info="Stage 1ère année"></span>
+                </div>
+                <div class="input">
+                    <span data-year="01/2019" data-info="Stage 2ème année"></span>
+                </div>
+                <div class="input">
+                    <span data-year="2019" data-info="BTS Informatique"></span>
+                </div>
+                <div class="input">
+                    <span data-year="2020" data-info="Bachelor WIS"></span>
+                </div>
+                <div class="input">
+                    <span data-year="2021" data-info="Double Diplôme Bachelor"></span>
+                </div>
+                <div class="input active">
+                    <span data-year="Aujourd'hui" data-info="Recherche Poste Développeur"></span>
+                </div>
+                <div class="input">
+                    <span data-year="Objectif" data-info="Développeur Fullstack"></span>
+                </div>
+            </div>
+            <div class="description-flex-container">
+                <p>Obtention du Baccalauréat Technologique STI2D option SIN (Sytèmes d'information et nymérique) au Lycée Raymond Queneau à Yvetot.</p>
+                <p>Entrée au BTS Informatique SIO (Services informatiques aux organisations) avec option SLAM (Solutions logicielles et applications métiers) à StJoSup au Havre.</p>
+                <p>
+                    Stage d'une durée de 5 semaines dans le cadre du BTS chez Microweb au Havre en tant que Développeur Web.
+                    <br>
+                    Maintenance et ajout de pages responsives sur des sites web.
+                    <br>
+                    Utilisation de PHP, HTML et CSS
+                </p>
+                <p>
+                    Stage d'une durée de 7 semaines, dans le cadre de ma deuxième année de BTS, à Antiote situé sur Yvetot en tant que Développeur D'application.
+                    <br>
+                    Développement d'une application de web-crawling en Windows Form C# sous Visual Studio.
+                    <br>
+                    Application permettant, à partir d'un lien ou d'une recherche via motclé, de récupérer les adresses mails présentes sur la page.
+                </p>
+                <p>Obtention de mon Brevet de Technicien Supérieur SIO (SLAM).</p>
+                <p>Entrée au Bachelor WIS "Chef de projet digital" à Grenoble avec pour option "Développeur Web & Web Mobile" ainsi que "Concepteur Développeur d’Applications".</p>
+                <p>Obtention du titre RNCP de niveau 5 "Développeur Web et Web Mobile". <br> Obtention du titre RNCP de niveau 6 "Concepteur Développeur d’Applications".</p>
+                <p class="active">Je suis actuellement à la recherche d'un poste de développeur PHP en région Normande, de préférence aux alentours de Rouen ou Le Havre. Vous avez une piste ou une proposition ? N'hésitez pas à <a style="font-weight:bold;font-style:none; color: #2C3E50" href="#contact">me contacter</a>.</p>
+                <p>L'objectif de mon parcours est de monter en compétences sur diverses technologies dites "back-end" mais également de m'améliorer grandement du côté de celles "front-end" pour pouvoir devenir un développeur full-stack.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section projets" id="projets">
+    <div>
+        <p class="section-titre">Mes projets</p>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide" style="width: 1522px; margin-right: 30px;">
+                    <div class="container">
+                        <div class="">
+                            <img class="slider-img" src="projets/new-portfolio/Home.PNG" alt="Visuel du nouveau site portfolio" style="width:100%">
+                        </div>
+                        <div class="slider-title" style="    position: absolute;    bottom: 0;    width: 100%;    background-color: #0f1923;    color: #ece8e1;    padding: 15px;">
+                            <p style="    font-size: 30px;">
+                                Portfolio version Netflix
+                            </p>
+                            <p class="">POC</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" style="width: 1522px; margin-right: 30px;">
+                    <div class="container">
+                        <div class="">
+                            <img class="slider-img" src="projets/bennezai/bennezai-accueil.png" alt="Présentation du site BenneZai" style="width:100%">
+                        </div>
+                        <div class="slider-title" style="    position: absolute;    bottom: 0;    width: 100%;    background-color: #0f1923;    color: #ece8e1;    padding: 15px;">
+                            <p style="    font-size: 30px;">
+                                BenneZai
+                            </p>
+                            <a target="_blank" href="https://github.com/VivienFreb/BenneZai" class="">Voir ce projet →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" style="width: 1522px; margin-right: 30px;">
+                    <div class="container">
+                        <div class="">
+                            <img class="slider-img" src="projets/cinema-willies/cinemas-willies-thumbnail.jpg" alt="Image présentation Cinémas Willies" style="width:100%">
+                        </div>
+                        <div class="slider-title" style="    position: absolute;    bottom: 0;    width: 100%;    background-color: #0f1923;    color: #ece8e1;    padding: 15px;">
+                            <p style="    font-size: 30px;">
+                                Cinemas Willies
+                            </p>
+                            <a target="_blank" href="https://github.com/VivienFreb/Cinema-Willies" class="">Voir ce projet →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" style="width: 1522px; margin-right: 30px;">
+                    <div class="container">
+                        <div class="">
+                            <img class="slider-img" src="projets/react-memorycard/react-memorycard-thumbnail.png" alt="Image présentation jeu de mémoire" style="width:100%">
+                        </div>
+                        <div class="slider-title" style="    position: absolute;    bottom: 0;    width: 100%;    background-color: #0f1923;    color: #ece8e1;    padding: 15px;">
+                            <p style="    font-size: 30px;">
+                                Jeu de mémoire (React)
+                            </p>
+                            <a target="_blank" href="https://github.com/VivienFreb/memory-reactjs" class="">Voir ce projet →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" style="width: 1522px; margin-right: 30px;">
+                    <div class="container">
+                        <div class="">
+                            <img class="slider-img" src="projets/mylolgg/mylolgg-thumbnail.png" alt="Présentation du site MyLOL.GG" style="width:100%">
+                        </div>
+                        <div class="slider-title" style="    position: absolute;    bottom: 0;    width: 100%;    background-color: #0f1923;    color: #ece8e1;    padding: 15px;">
+                            <p style="    font-size: 30px;">
+                                Mastery Viewer MyLOL.GG (React)
+                            </p>
+                            <a target="_blank" href="https://github.com/VivienFreb/MyLOL.GG-Website" class="">Voir ce projet →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" style="width: 1522px; margin-right: 30px;">
+                    <div class="container">
+                        <div class="">
+                            <img class="slider-img" src="projets/agence-immo/agence-thumbnails.jpg" alt="Image présentation site Agence Immobilière" style="width:100%">
+                        </div>
+                        <div class="slider-title" style="    position: absolute;    bottom: 0;    width: 100%;    background-color: #0f1923;    color: #ece8e1;    padding: 15px;">
+                            <p style="    font-size: 30px;">
+                                Agence Immo
+                            </p>
+                            <a target="_blank" href="https://github.com/VivienFreb/AgenceImmobiliere" class="">Voir ce projet →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <!--            <a href="#" class="btn-visite">-->
+        <!--                Voir tous les projets-->
+        <!--            </a>-->
+    </section>
+
+    <section class="section contact" id="contact">
+        <p class="section-titre" style="font-size: 50px; text-align: center">Une question ? Une propositon ? Contactez-moi.</p>
+        <div class="section-flex" style="margin-top: 50px;">
+            <div class="gauche" style="flex: 50%">
+                <p>Téléphone</p>
+                <p>06.37.87.57.04</p>
+                <a href="tel:+33637875704" class="btn-visite">Appeler</a>
+            </div>
+            <div class="droite" style="flex: 50%">
+                <p>Email</p>
+                <p>vivien.frebourg@outlook.com</p>
+                <a href="mailto:vivien.frebourg@outlook.com" class="btn-visite">Envoyer un email</a>
+            </div>
+        </div>
+    </section>
+
+</div>
 </div>
 <footer>
     <div id="nav-footer">
@@ -368,5 +403,6 @@
 <script src="assets/scripts/three.r95.min.js"></script>
 <script src="assets/scripts/vanta.fog.min.js"></script>
 <script src="assets/scripts/slider.js"></script>
+<script src="assets/scripts/accordeon.js"></script>
 <script src="assets/scripts/swiper.min.js"></script>
 </html>
